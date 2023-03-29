@@ -19,10 +19,10 @@ public class AluguelDeVeiculos extends JFrame {
 
     private void testaAluguelDeVeiculos () {
 
-        Container janela = getContentPane(); // CRIADO O CONTAINER JANELA
+        Container janela = getContentPane();
         setLayout(null);
 
-        //COMANDOS DA CLASSE JLABEL - ROTULOS DE TEXTO
+      
 
         //Rotulo de título
         JLabel labelAluguelDeVeiculos = new JLabel("Aluguel de Veículos");
@@ -84,16 +84,13 @@ public class AluguelDeVeiculos extends JFrame {
         JFormattedTextField jFormattedTextDataLocacao = new JFormattedTextField(mascaraDataLocacao);
         JFormattedTextField jFormattedTextDataEntrega = new JFormattedTextField(mascaraDataEntrega);
 
-        // Botao Salvar
+      
 
         JButton JButtonbotaoSalvar = new JButton();
         JButtonbotaoSalvar.setText("SALVAR");
 
 
 
-        // SetBounds para localizacao dos itens (x,y) e tamanho (w,h)
-
-        //Labels - Rotulos de Texto
         labelAluguelDeVeiculos.setBounds(50,10,200,20);
         labelDadosDoCliente.setBounds(50,50, 200, 20);
         labelNomeCliente.setBounds(50,80,100,20);
@@ -116,12 +113,11 @@ public class AluguelDeVeiculos extends JFrame {
         jFormattedTextDataLocacao.setBounds(180,320,80,20);
         jFormattedTextDataEntrega.setBounds(180,350,80,20);
 
-        //JButton - Botao Salvar
+       
         JButtonbotaoSalvar.setBounds(120,400,100,20);
 
 
-        //Preenchimento do Container Janela - Adiciona os rótulos e os campos de textos com máscaras no Container
-        //Labels - Rotulos
+      
         janela.add(labelAluguelDeVeiculos);
         janela.add(labelDadosDoCliente);
         janela.add(labelDadosDoCarro);
@@ -142,10 +138,9 @@ public class AluguelDeVeiculos extends JFrame {
         janela.add(jFormattedTextAno);
         janela.add(jFormattedTextDataEntrega);
         janela.add(jFormattedTextDataLocacao);
-        //JButton - Botao Salvar
+       
         janela.add(JButtonbotaoSalvar);
 
-        //Tamanho da Tela
         setSize(400, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
