@@ -1,1 +1,1 @@
-# Pratica_LP
+# Linguagem de programação
